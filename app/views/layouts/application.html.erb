@@ -9,19 +9,24 @@
 <body>
 
   <!-- This is the Nav Bar -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-	  <div class="container">
-	    <button type="button" class="btn btn-default navbar-btn">Home</button>
-	    <button type="button" class="btn btn-default navbar-btn">About Us</button>
-	    <button type="button" class="btn btn-default navbar-btn">Services</button>
-	    <button type="button" class="btn btn-default navbar-btn">Contact Us</button>
-	    <button type="button" class="btn btn-default navbar-btn">Blog</button>
-	  </div>
+  <nav class="nav navbar-fixed-top">
+    <a href="#" class='navbar-brand'>House of Harlow</a>
+
+    <div class='navbar-collapse'>
+
+      <ul class='nav navbar-nav navbar-right'>
+  	    <li type="button" class="btn btn-default navbar-btn">Home</li>
+  	    <li type="button" class="btn btn-default navbar-btn">About</li>
+  	    <li type="button" class="btn btn-default navbar-btn">Services</li>
+  	    <li type="button" class="btn btn-default navbar-btn">Contact</li>
+  	    <li type="button" class="btn btn-default navbar-btn">Blog</li>
+      </ul>
+    </div>
 	</nav>
 
 
   <!-- This is the ruby 'yield' section holding the body of all content -->
-  <div>
+  <div class='container'>
     <div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
@@ -29,6 +34,8 @@
       <%= yield %>
     </div>
   </div>
+
+  <script src='js/bootstrap.js'></script>
 
 </body>
 </html>
